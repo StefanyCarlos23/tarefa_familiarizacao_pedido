@@ -18,4 +18,4 @@ def calcular_total_pedido(subtotal, distancia_km, cliente_vip=False):
         frete = 8 + 1.5 * distancia_km
 
     total = subtotal_com_desconto + frete
-    return total
+    return round(total, 2)
